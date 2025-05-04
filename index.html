@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Únete como Administrador - Servidor de Discord</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="banner">
+      <img src="Welcome!(1).png" alt="¡Bienvenido al servidor!">
+      <h1>¡Te estamos buscando!</h1>
+      <p>¿Querés formar parte del equipo de admins/mods de nuestro servidor?</p>
+      <p>Completá el formulario y postulate ahora.</p>
+    </div>
+
+    <div class="form-container">
+      <form action="https://formspree.io/f/mwpolyzr" method="POST">
+        <label for="username">Nombre de usuario en Discord:</label>
+        <input type="text" id="username" name="username" placeholder="ej: pepe" required />
+
+        <label for="experience">¿Tenés experiencia en moderación?</label>
+        <select id="experience" name="experience" required>
+          <option value="">Seleccionar</option>
+          <option value="yes">Sí</option>
+          <option value="no">No</option>
+        </select>
+
+        <label for="bots">¿Tenés experiencia con bots de moderación? ¿Cuáles?</label>
+        <textarea id="bots" name="bots" rows="2" required></textarea>
+
+        <label for="motivation">¿Por qué querés ser admin?</label>
+        <textarea id="motivation" name="motivation" rows="3" required></textarea>
+
+        <label for="time">¿Cuánto tiempo pasás en Discord por día?</label>
+        <textarea id="time" name="time" rows="1" required></textarea>
+
+        <label for="harassment">¿Qué harías si un miembro se siente acosado por otro?</label>
+        <textarea id="harassment" name="harassment" rows="2" required></textarea>
+
+        <label for="available">¿Estás disponible para emergencias?</label>
+        <select id="available" name="available" required>
+          <option value="">Seleccionar</option>
+          <option value="yes">Sí</option>
+          <option value="no">No</option>
+        </select>
+
+        <label for="rules">¿Vas a aceptar y hacer cumplir las reglas?</label>
+        <select id="rules" name="rules" required>
+          <option value="">Seleccionar</option>
+          <option value="yes">Sí</option>
+          <option value="no">No</option>
+        </select>
+
+        <button type="submit">Enviar solicitud</button>
+      </form>
+    </div>
+
+    <div class="server-links">
+      <p>Unite a nuestro servidor oficial:</p>
+      <a href="https://discord.gg/NdrnGFajAk" target="_blank">Servidor Oficial</a>
+
+      <p>Si sos admin, accedé al servidor exclusivo para administradores:</p>
+      <a href="https://discord.gg/prwxStrnA2" target="_blank">Servidor Solo Admins</a>
+    </div>
+  </div>
+</body>
+</html>
